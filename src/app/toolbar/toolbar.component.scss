@@ -1,0 +1,40 @@
+#toolbar{
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top: 10px;
+}
+#toolbar p{
+  display: block;
+  float: right;
+  margin-top: -5%;
+  color: #d1d5db;
+}
+
+#toolbar .navigation ul{
+  float: left;
+  display: block;
+  margin-top: -5%;
+  margin-left: 25%;
+}
+#toolbar .navigation li{
+  color: #d1d5db;
+  text-align: center;
+  padding: 16px;
+  display: inline;
+}
+#toolbar .navigation li:hover {
+  color: white;
+  background-color: black;
+  cursor: grab;
+  border-radius: 10px;
+
+}
+#toolbar .navigation li:not(:last-of-type){
+  margin-right: 20px;
+}
+#toolbar img {
+  display: block;
+  border-radius: 10px;
+  background-color: #d1d5db;
+  filter: drop-shadow(0 25px 25px rgb(0 0 0 / 0.15));
+}

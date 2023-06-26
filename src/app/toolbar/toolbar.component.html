@@ -1,1 +1,16 @@
-<p>toolbar works!</p>
+<div id="toolbar">
+ <img src="assets/logo/icons8-darth-vader-50.png" alt="">
+ <div class="navigation">
+   <ul>
+     <li 
+      *ngFor="let navigate of navigates"
+      [style.color]="focus == navigate.name ? 'white' :''"
+      [style.background-color]="focus == navigate.name ? 'black' :''"
+      [style.border-radius]="focus == navigate.name ? '10px': ''"
+      (click)="Router(navigate)">
+       {{ navigate.name }}
+     </li>
+   </ul>
+ </div>
+ <!-- <p>home</p> -->
+</div>
