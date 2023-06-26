@@ -7,6 +7,7 @@ import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
 import { GearComponent } from './components/gear/gear.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
+import { StartComponent } from './start/start.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { ToolbarComponent } from './toolbar/toolbar.component';
     HomeComponent,
     AboutComponent,
     GearComponent,
-    ToolbarComponent
+    ToolbarComponent,
+    StartComponent
   ],
   imports: [
     BrowserModule,
