@@ -10,24 +10,24 @@ import { Observable } from 'rxjs';
 export class ToolbarComponent {
   focus: string = "";
   navigates = [
-    {name: "Home"},
-    {name: "About"},
-    {name: "Blog"},
-    {name: "Gear"}
+    { name: "Home" },
+    { name: "About" },
+    { name: "Blog" },
+    { name: "Gear" }
   ]
   constructor(
     private router: Router
-  ){}
-  ngOnInit(): void{
-    if (this.focus == ''){
-    const page = sessionStorage.getItem('navigate')
-      this.focus = page != null ? page : '' 
+  ) { }
+  ngOnInit(): void {
+    if (this.focus == '') {
+      const page = sessionStorage.getItem('navigate')
+      this.focus = page != null ? page : 'home'
     }
   }
-  Router(navigate: any ){
-      sessionStorage.setItem('navigate',navigate.name)
-      this.focus = navigate.name
-      // this.router.navigate(["home"])  
+  Router(navigate: any) {
+    sessionStorage.setItem('navigate', navigate.name)
+    this.focus = navigate.name
+    // this.router.navigate(["home"])
     this.router.navigate([navigate.name.toLowerCase()])
   }
 }
