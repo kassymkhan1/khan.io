@@ -27,7 +27,7 @@ export class ToolbarComponent {
   Router(navigate: any ){
       sessionStorage.setItem('navigate',navigate.name)
       this.focus = navigate.name
-      this.router.navigate(["home"])  
-    // this.router.navigate([navigate.name.toLowerCase()])
+      // this.router.navigate(["home"])  
+    this.router.navigate([navigate.name.toLowerCase()])
   }
 }

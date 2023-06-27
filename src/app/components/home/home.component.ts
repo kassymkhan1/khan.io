@@ -6,4 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent {
+  Name: string = "Kassymhan Kazlhan"
+  activete: string = "I write code and make videos."
+  github_start: number = 0
+  blogs = [{
+    date: "Test",
+    path: "",
+    description: ""
+
+  }]
+
 }
