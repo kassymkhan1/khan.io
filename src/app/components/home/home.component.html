@@ -1,47 +1,19 @@
-<div
-  class="home_info">
-
-  <h1><p>{{ Name }}</p></h1>
-  <p class="low_text">{{ activete }}<p>
-  <div class="url_stat">
-    <div class="column_1">
-    <img src="assets/logo/icons8-darth-vader-100.png" alt="">
-    </div>
-  <!--   <div class="column_2"> -->
-  <!--   <div class="gihub"> -->
-  <!--     {{ github_start }} Repository Stars -->
-  <!--   </div> -->
-  <!--   <div class="blog"> -->
-  <!--     Total Blog Views -->
-  <!--   </div> -->
-  <!--   <div class="youtube"> -->
-  <!--     Youtube Subcribers -->
-  <!--   </div> -->
-  <!--   </div> -->
-  <!-- </div> -->
-<!-- <div class="description"> -->
-<!--   Hi my name Kassymhan -->
-<!-- </div> -->
-<!-- <div class="endpoint"> -->
-<!-- <a href="#" class="email">Email me</a> -->
-<!-- <a href="#" class="connect">Connect with me</a> -->
+<div class="header_info">
+   <h1>Kassymkhan Kalzhan</h1>
+   <p>I write code and make video</p>
 </div>
 
+<div class="middle_info">
+  <img src="assets/logo/icons8-darth-vader-100.png" alt="">
+  <ul>
+    <li *ngFor="let social of sociales">{{ social.name }}</li>
+  </ul>
 </div>
-<!-- <div -->
-<!--   class="home_blogs"> -->
-<!--  <p>Latest Blog</p> -->
-<!--  <ul> -->
-<!--    <li *ngFor="let blog of blogs"> -->
-<!--      <div class="last_blogs"> -->
-<!--        <a href="{{ blog.path }}"> -->
-<!--          <p>{{ blog.date }}</p> -->
-<!--          <div> -->
-<!--            {{ blog.description }} -->
-<!--          </div> -->
-<!--        </a> -->
-<!--      </div> -->
-<!--    </li> -->
-<!--  </ul> -->
-<!--  <p class="all_blog">See All</p> -->
-<!-- </div> -->
+
+<div class="description">
+  
+</div>
+
+<div class="blog">
+  
+</div>

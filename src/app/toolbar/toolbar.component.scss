@@ -1,19 +1,12 @@
-#toolbar{
-  margin-left: 25%;
-  margin-right: 25%;
-  margin-top: 10px;
-}
-#toolbar p{
-  display: block;
-  float: right;
-  margin-top: -5%;
-  color: #d1d5db;
+#toolbar {
+  display: flex;
+  flex-flow: row;
+  width: 100%
 }
 
 #toolbar .navigation ul{
   float: left;
-  display: block;
-  margin-top: -5%;
+  display: flex;
   margin-left: 25%;
 }
 #toolbar .navigation li{
@@ -30,7 +23,7 @@
 
 }
 #toolbar .navigation li:not(:last-of-type){
-  margin-right: 20px;
+  margin-right: 10%;
 }
 #toolbar img {
   display: block;
