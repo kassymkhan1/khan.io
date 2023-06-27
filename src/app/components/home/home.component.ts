@@ -15,5 +15,10 @@ export class HomeComponent {
     description: ""
 
   }]
+  sociales=[
+    {name: "github"},
+    {name: "youtube"},
+    {name: "blogs"}
+  ]
 
 }
