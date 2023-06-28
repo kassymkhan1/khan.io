@@ -23,7 +23,7 @@
   font-size: 300px;
 }
 .description {
-  margin-left: 1.5%;
+  margin-left: 1%;
   margin-top: 3%;
   color: #64748b;
   width: 400px;
@@ -37,4 +37,20 @@
 
 .middle_info li:not(:first-of-type){
   margin-top: 5px;
+}
+
+.links {
+  margin-top: 2%;
+  margin-left: 1%;
+  display: flex;
+  flex-flow: row;
+}
+.links .email{
+   margin-right: 20px;
+}
+.links .email:hover{
+  color: white;
+}
+.links .connects:hover{
+  color: white;
 }
