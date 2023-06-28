@@ -22,7 +22,19 @@
 .middle_info img{
   font-size: 300px;
 }
+.description {
+  margin-left: 1.5%;
+  margin-top: 3%;
+  color: #64748b;
+  width: 400px;
+}
 
 .middle_info ul{
-  margin-left: 4%;
+  margin-left: 10%;
+  font-size: 0.8em;
+  color: #374151;
+}
+
+.middle_info li:not(:first-of-type){
+  margin-top: 5px;
 }

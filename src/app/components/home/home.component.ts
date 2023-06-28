@@ -18,7 +18,7 @@ export class HomeComponent {
   sociales=[
     {name: "github"},
     {name: "youtube"},
-    {name: "blogs"}
+    {name: "blogs"},
   ]
 
 }
