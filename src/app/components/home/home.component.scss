@@ -30,7 +30,7 @@
 }
 
 .middle_info ul{
-  margin-left: 10%;
+  margin-left: 5%;
   font-size: 0.8em;
   color: #374151;
 }
@@ -49,8 +49,10 @@
    margin-right: 20px;
 }
 .links .email:hover{
+  cursor: default;
   color: white;
 }
 .links .connects:hover{
+  cursor: default;
   color: white;
 }
