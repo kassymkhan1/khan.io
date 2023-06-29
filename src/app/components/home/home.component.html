@@ -6,7 +6,7 @@
 <div class="middle_info">
   <img src="assets/logo/icons8-darth-vader-100.png" alt="">
   <ul>
-    <li *ngFor="let social of sociales">{{ social.name }}</li>
+    <li *ngFor="let social of sociales"><a href="{{ social.path}}">{{ social.name }}</a></li>
   </ul>
 </div>
 
@@ -19,9 +19,8 @@
   <div class="connects">Connect with my</div>
 </div>
 
-<div *ngIf="blogs.length > 1" class="blog">
+<div *ngIf="blogs.length > 1" class="blog"> 
   <p>Lates Blogs</p> 
   <div *ngFor="let blog of blogs">{{ blog.description}}</div>
   <div>See All</div>
 </div>
-<app-start />

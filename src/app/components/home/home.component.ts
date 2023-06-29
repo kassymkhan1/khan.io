@@ -16,9 +16,9 @@ export class HomeComponent {
 
   }]
   sociales=[
-    {name: "github"},
-    {name: "youtube"},
-    {name: "blogs"},
+    {name: "github",path: "https://github.com/kassymkhan1"},
+    {name: "youtube", path: "https://www.youtube.com/channel/UCwQgVeAPJORKHc3uK3_JjZw"},
+    {name: "blogs",  path: "home"},
   ]
   ngOnInit(): void{
   }
