@@ -19,7 +19,9 @@
   <div class="connects">Connect with my</div>
 </div>
 
-<div class="blog">
-  
+<div *ngIf="blogs.length > 1" class="blog">
+  <p>Lates Blogs</p> 
+  <div *ngFor="let blog of blogs">{{ blog.description}}</div>
+  <div>See All</div>
 </div>
 <app-start />
