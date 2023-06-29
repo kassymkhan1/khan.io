@@ -25,7 +25,7 @@
 .description {
   margin-left: 1%;
   margin-top: 3%;
-  color: #64748b;
+  color: #d4d4d4;
   width: 400px;
 }
 
@@ -37,6 +37,10 @@
 
 .middle_info li:not(:first-of-type){
   margin-top: 5px;
+}
+.middle_info li:hover{
+  color: white;
+  cursor: default;
 }
 
 .links {

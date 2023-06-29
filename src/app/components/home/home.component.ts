@@ -12,7 +12,7 @@ export class HomeComponent {
   blogs = [{
     date: "Test",
     path: "",
-    description: ""
+    description: "test"
 
   }]
   sociales=[
@@ -20,5 +20,25 @@ export class HomeComponent {
     {name: "youtube"},
     {name: "blogs"},
   ]
+  ngOnInit(): void{
+  }
+  async github(){
+    try{
+    const username: string = "kassymkhan1"
+    const url: string = `https://api.github.com/users/${username}/repos?per_page=100`
+    const response = await  fetch(url);
+    const data = await response.json();
+    const stars = data.reduce(
+      (acc: number, curr: { stargazers_count: number }) =>
+        acc + curr.stargazers_count,
+      0
+    );
+    return stars;
+    }catch(err){
 
+    }
+  }
+  async view_blog(){
+  }
+  async subcription_youtube(){}
 }
