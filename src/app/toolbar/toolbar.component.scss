@@ -16,10 +16,11 @@
   padding: 16px;
   display: inline;
 }
-#toolbar .navigation li:hover {
+#toolbar .navigation ul li:hover {
   color: white;
+  cursor: default;
+  display: flex;
   background-color: black;
-  cursor: grab;
   border-radius: 10px;
 
 }

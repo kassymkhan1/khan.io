@@ -39,7 +39,8 @@
 .middle_info li:not(:first-of-type){
   margin-top: 5px;
 }
-.middle_info li:hover{
+.middle_info li a:hover{
+  display: flex;
   color: white;
   cursor: default;
 }
@@ -58,6 +59,17 @@
   color: white;
 }
 .links .connects:hover{
+  cursor: default;
+  color: white;
+}
+
+.blog .all_blog{
+  margin-top: 3%;
+  margin-left: 1%;
+  text-decoration: underline;
+  color: #4b5563;
+}
+.blog .all_blog:hover{
   cursor: default;
   color: white;
 }
