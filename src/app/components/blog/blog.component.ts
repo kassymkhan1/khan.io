@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ToolbarComponent } from 'src/app/toolbar/toolbar.component';
 
 @Component({
   selector: 'app-blog',
@@ -7,4 +8,7 @@ import { Component } from '@angular/core';
 })
 export class BlogComponent {
 
+  constructor(
+  ){
+  }
 }

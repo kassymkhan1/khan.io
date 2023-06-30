@@ -15,30 +15,32 @@ export class HomeComponent {
     description: "test"
 
   }]
-  sociales=[
-    {name: "github",path: "https://github.com/kassymkhan1"},
-    {name: "youtube", path: "https://www.youtube.com/channel/UCwQgVeAPJORKHc3uK3_JjZw"},
-    {name: "blogs",  path: "home"},
+  github_url: string = "https://github.com/kassymkhan1"
+  youtube_url: string = "https://www.youtube.com/channel/UCwQgVeAPJORKHc3uK3_JjZw"
+  sociales = [
+    { name: "Blogs", path: "/blog" },
   ]
-  ngOnInit(): void{
+  ngOnInit(): void {
   }
-  async github(){
-    try{
-    const username: string = "kassymkhan1"
-    const url: string = `https://api.github.com/users/${username}/repos?per_page=100`
-    const response = await  fetch(url);
-    const data = await response.json();
-    const stars = data.reduce(
-      (acc: number, curr: { stargazers_count: number }) =>
-        acc + curr.stargazers_count,
-      0
-    );
-    return stars;
-    }catch(err){
+  constructor(
+  ) { }
+  async github() {
+    try {
+      const username: string = "kassymkhan1"
+      const url: string = `https://api.github.com/users/${username}/repos?per_page=100`
+      const response = await fetch(url);
+      const data = await response.json();
+      const stars = data.reduce(
+        (acc: number, curr: { stargazers_count: number }) =>
+          acc + curr.stargazers_count,
+        0
+      );
+      return stars;
+    } catch (err) {
 
     }
   }
-  async view_blog(){
+  async view_blog() {
   }
-  async subcription_youtube(){}
+  async subcription_youtube() { }
 }

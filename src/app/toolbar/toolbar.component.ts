@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
-import { Observable } from 'rxjs';
+import { NavigationStart, Router } from '@angular/router';
 
 @Component({
   selector: 'app-toolbar',
@@ -8,7 +7,7 @@ import { Observable } from 'rxjs';
   styleUrls: ['./toolbar.component.scss']
 })
 export class ToolbarComponent {
-  focus: string = "";
+  focus = 'home';
   dropMenu = false;
   navigates = [
     { name: "Home" },
@@ -18,20 +17,26 @@ export class ToolbarComponent {
   ]
   constructor(
     private router: Router
-  ) { }
-  ngOnInit(): void {
-    if (this.focus == '') {
-      const page = sessionStorage.getItem('navigate')
-      this.focus = page != null ? page : 'home'
-    }
+  ) { 
+      this.router.events.subscribe((event)=>{
+        if(event instanceof NavigationStart){
+            if (event.url == '/'){
+              this.focus = 'home'
+              this.router.navigate(['home'])
+            }else{
+              this.focus = event.url.replace('/','')
+            }
+        }    
+      }
+    )
   }
-  Router(navigate: any) {
-    sessionStorage.setItem('navigate', navigate.name)
-    this.focus = navigate.name
-    // this.router.navigate(["home"])
-    this.router.navigate([navigate.name.toLowerCase()])
+  ngOnInit(): void {}
+  Router(navigate: string) {
+    this.focus = navigate
+    this.router.navigate([navigate.toLowerCase()])
   }
   DropMenu(){
       this.dropMenu = !this.dropMenu;
   }
+
 }
