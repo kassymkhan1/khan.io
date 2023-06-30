@@ -6,7 +6,7 @@
 <div class="middle_info">
   <img src="assets/logo/icons8-darth-vader-100.png" alt="">
   <ul>
-    <li><a href="{{ github_url }}">Github</a></li>
+    <li><a href="{{ github_url }}">{{ github() }}Github</a></li>
     <li><a href="{{ youtube_url }}">Youtube</a></li>
     <li *ngFor="let social of sociales"><a routerLink="{{social.path}}">{{ social.name}}</a></li>
   </ul>
@@ -17,13 +17,24 @@
 </div>
 
 <div class="links">
-  <div class="email"><a routerLink="/home">Email me</a></div>
-  <div class="connects"><a routerLink="/home">Connect with my</a></div>
+  <div class="email">
+    <a routerLink="/home">Email me</a>
+
+  </div>
+  <div class="connects">
+    <a routerLink="/home">Connect with my</a>
+  </div>
 </div>
 
 
-<div *ngIf="blogs.length > 1" class="blog"> 
-  <p>Lates Blogs</p> 
-  <div *ngFor="let blog of blogs">{{ blog.description}}</div>
+<div *ngIf="blogs.length > 1" class="blog">
+  <p>Lates Blogs</p>
+  <div *ngFor="let blog of blogs">
+    {{ blog.description}}
+  </div>
   <div class="all_blog">See All</div>
+</div>
+
+<div>
+  
 </div>
