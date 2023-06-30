@@ -6,7 +6,9 @@
 <div class="middle_info">
   <img src="assets/logo/icons8-darth-vader-100.png" alt="">
   <ul>
-    <li *ngFor="let social of sociales"><a href="{{ social.path}}">{{ social.name }}</a></li>
+    <li><a href="{{ github_url }}">Github</a></li>
+    <li><a href="{{ youtube_url }}">Youtube</a></li>
+    <li *ngFor="let social of sociales"><a routerLink="{{social.path}}">{{ social.name}}</a></li>
   </ul>
 </div>
 

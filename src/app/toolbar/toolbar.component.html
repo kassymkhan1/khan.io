@@ -4,10 +4,10 @@
    <ul>
      <li 
       *ngFor="let navigate of navigates"
-      [style.color]="focus == navigate.name ? 'white' :''"
-      [style.background-color]="focus == navigate.name ? 'black' :''"
-      [style.border-radius]="focus == navigate.name ? '10px': ''"
-      (click)="Router(navigate)">
+      [style.color]="focus == navigate.name.toLowerCase() ? 'white' :''"
+      [style.background-color]="focus == navigate.name.toLowerCase() ? 'black' :''"
+      [style.border-radius]="focus == navigate.name.toLowerCase() ? '10px': ''"
+      (click)="Router(navigate.name)">
        {{ navigate.name }}
      </li>
    </ul>
@@ -20,13 +20,14 @@
    <ul class="dropdown-content" [style.display]="dropMenu ? 'block':'none'">
      <li 
       *ngFor="let navigate of navigates"
-      [style.color]="focus == navigate.name ? 'white' :''"
-      [style.background-color]="focus == navigate.name ? 'black' :''"
-      [style.border-radius]="focus == navigate.name ? '10px': ''"
-      (click)="Router(navigate)">
+      [style.color]="focus == navigate.name.toLowerCase() ? 'white' :''"
+      [style.background-color]="focus == navigate.name.toLowerCase() ? 'black' :''"
+      [style.border-radius]="focus == navigate.name.toLowerCase() ? '10px': ''"
+      (click)="Router(navigate.name)">
        {{ navigate.name }}
      </li>
    </ul>
  <div>
  <!-- <p>home</p> -->
 </div>
+
