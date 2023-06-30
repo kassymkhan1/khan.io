@@ -7,8 +7,4 @@ import { ToolbarComponent } from 'src/app/toolbar/toolbar.component';
   styleUrls: ['./blog.component.scss']
 })
 export class BlogComponent {
-
-  constructor(
-  ){
-  }
 }
