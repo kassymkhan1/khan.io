@@ -9,6 +9,7 @@ import { Observable } from 'rxjs';
 })
 export class ToolbarComponent {
   focus: string = "";
+  dropMenu = false;
   navigates = [
     { name: "Home" },
     { name: "About" },
@@ -29,5 +30,8 @@ export class ToolbarComponent {
     this.focus = navigate.name
     // this.router.navigate(["home"])
     this.router.navigate([navigate.name.toLowerCase()])
+  }
+  DropMenu(){
+      this.dropMenu = !this.dropMenu;
   }
 }
