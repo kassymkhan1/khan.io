@@ -8,6 +8,7 @@ import { AboutComponent } from './components/about/about.component';
 import { GearComponent } from './components/gear/gear.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
 import { StartComponent } from './start/start.component';
+import {MatIconModule} from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -16,11 +17,13 @@ import { StartComponent } from './start/start.component';
     AboutComponent,
     GearComponent,
     ToolbarComponent,
-    StartComponent
+    StartComponent,
+    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]

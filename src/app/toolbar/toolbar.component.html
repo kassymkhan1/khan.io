@@ -12,5 +12,21 @@
      </li>
    </ul>
  </div>
+<div class="mobile_navigation">
+<div class="dropdown">
+  <button  (click)="DropMenu()" class="dropbtn">
+    <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="menu"></mat-icon>
+  </button>
+   <ul class="dropdown-content" [style.display]="dropMenu ? 'block':'none'">
+     <li 
+      *ngFor="let navigate of navigates"
+      [style.color]="focus == navigate.name ? 'white' :''"
+      [style.background-color]="focus == navigate.name ? 'black' :''"
+      [style.border-radius]="focus == navigate.name ? '10px': ''"
+      (click)="Router(navigate)">
+       {{ navigate.name }}
+     </li>
+   </ul>
+ <div>
  <!-- <p>home</p> -->
 </div>
