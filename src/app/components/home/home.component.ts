@@ -7,21 +7,32 @@ import { ApiService } from 'src/app/services/api.service';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent {
-  Name: string = "Kassymhan Kazlhan"
-  activete: string = "I write code and make videos."
-  github_start: number = 0
+  GithubStars: number = 0;
+  github: any;
   blogs = [{
+    date: "",
     description: "Description",
     path: "assets/blogs/start.md"
   }]
   github_url: string = "https://github.com/kassymkhan1"
   youtube_url: string = "https://www.youtube.com/channel/UCwQgVeAPJORKHc3uK3_JjZw"
   sociales = [
-    { name: "Blogs", path: "/blog" },
+    { name: "Total Blog Views", path: "/blog" },
   ]
   ngOnInit(): void {
   }
   constructor(
     private api: ApiService
-  ) { }
+  ) {
+    this.github = this.api.github().subscribe((response)=>{
+      response.forEach((element) => {
+        if (element.stargazers_count){
+        this.GithubStars += element.stargazers_count
+        }
+      });
+    })
+  }
+  onDestroy(): void{
+    this.github.destroy()
+  }
 }
