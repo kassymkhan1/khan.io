@@ -30,7 +30,6 @@ export class ToolbarComponent {
       }
     )
   }
-  ngOnInit(): void {}
   Router(navigate: string) {
     this.focus = navigate
     this.router.navigate([navigate.toLowerCase()])
