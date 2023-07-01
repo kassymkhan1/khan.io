@@ -9,7 +9,7 @@ import { GearComponent } from './components/gear/gear.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
 import { StartComponent } from './start/start.component';
 import {MatIconModule} from '@angular/material/icon';
-
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,7 +23,8 @@ import {MatIconModule} from '@angular/material/icon';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MatIconModule
+    MatIconModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
