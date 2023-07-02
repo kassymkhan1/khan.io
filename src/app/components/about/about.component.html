@@ -2,3 +2,41 @@
   <h1>About Me</h1>
    <p>Just a quick glimpse.</p>
 </div>
+
+<div class="about">
+  <div class="column_1">
+    About
+  </div>
+  <div class="column_2">
+    Description About
+  </div>
+</div>
+
+<div class="Connect">
+  <div class="column_1">
+     Connect  
+  </div>
+  <div class="column_2">
+    <div class="description">
+      Connect Description
+    </div>
+    <div class="social">
+      <ul>
+        <li *ngFor="let connect of connects">{{ connect.name}}</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="Work">
+  <div class="column_1">
+     Work  
+  </div>
+  <div class="column_2">
+    <div class="work_description">
+      
+    </div>
+    <div class="works">
+    </div>
+  </div>
+</div>

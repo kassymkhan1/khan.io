@@ -11,6 +11,7 @@ import { StartComponent } from './start/start.component';
 import { MatIconModule } from '@angular/material/icon';
 import { HttpClientModule } from '@angular/common/http';
 import { BlogComponent } from './components/blog/blog.component';
+import { ProjectsComponent } from './components/projects/projects.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { BlogComponent } from './components/blog/blog.component';
     GearComponent,
     ToolbarComponent,
     StartComponent,
-    BlogComponent
+    BlogComponent,
+    ProjectsComponent
 
   ],
   imports: [
