@@ -9,7 +9,7 @@ const Blogs: Routes = [
   {path: "start", component: BlogComponent}
 ]
 const routes: Routes = [
-  { path: "home", component: HomeComponent},
+  { path: "", component: HomeComponent},
   { path: "about", component: AboutComponent},
   { path: "gear", component:  GearComponent},
   { path: "blog", component: BlogComponent},

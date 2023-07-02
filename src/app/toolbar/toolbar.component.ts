@@ -10,7 +10,6 @@ export class ToolbarComponent {
   focus = 'home';
   dropMenu = false;
   navigates = [
-    { name: "Home" },
     { name: "About" },
     { name: "Blog" },
     { name: "Gear" }
@@ -20,12 +19,7 @@ export class ToolbarComponent {
   ) { 
       this.router.events.subscribe((event)=>{
         if(event instanceof NavigationStart){
-            if (event.url == '/'){
-              this.focus = 'home'
-              this.router.navigate(['home'])
-            }else{
-              this.focus = event.url.replace('/','')
-            }
+            this.focus = event.url.replace('/','')
         }    
       }
     )
