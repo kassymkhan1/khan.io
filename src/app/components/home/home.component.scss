@@ -1,71 +1,76 @@
-.header_info h1{
-  color: white;
-  font-size: 30px;
-}
-.header_info p{
-  margin-top: -2%;
-  color: #9ca3af;
-  margin-bottom: 5%;
-}
-.middle_info{
-  display: flex;
-  margin-top: 10%;
-  font-size: 20px;
-  width: 100%;
-  height: 100px;
-  flex-flow: row;
+.header_info {
+  h1{
+    color: white;
+    font-size: 30px;
+  }
+  p{
+    margin-top: -2%;
+    color: #9ca3af;
+    margin-bottom: 5%;
+  }
 }
 
-.middle_info img{
-  font-size: 300px;
+.middle_info{
+  display: block;
+  float: left;
+  width: 400px;
+  columns: 2;
+  margin-top: 2%;
+  font-size: 20px;
+  img{
+    font-size: 300px;
+  }
+  ul{
+    margin-left: -20%;
+    font-size: 0.8em;
+    color: #374151;
+    li{
+      &:not(:first-of-type){
+        margin-top: 3%;
+      }
+      a:hover{
+        color: white;
+        cursor: default;
+      }
+    }
+  }
 }
 .description {
-  margin-left: 1%;
-  margin-top: 10%;
+  margin-top: 30%;
+  display: block;
+  font-size: 16px;
   color: #d4d4d4;
   width: 400px;
 }
 
-.middle_info ul{
-  margin-left: 20%;
-  font-size: 0.8em;
-  color: #374151;
-}
-
-.middle_info li:not(:first-of-type){
-  margin-top: 5px;
-}
-.middle_info li a:hover{
-  display: flex;
-  color: white;
-  cursor: default;
-}
-
 .links {
-  margin-top: 10%;
-  margin-left: 1%;
-  display: flex;
-  flex-flow: row;
-}
-.links .email{
-   margin-right: 20px;
-}
-.links .email:hover{
-  cursor: default;
-  color: white;
-}
-.links .connects:hover{
-  cursor: default;
-  color: white;
+  font-size: 15px;
+  margin-top: 5%;
+  columns: 2;
+  float: left;
+  display: block;
+  .email:hover{
+    cursor: default;
+    color: white;
+  }
+  .connects{ 
+    margin-left: -20%;
+    &:hover{
+      cursor: default;
+      color: white;
+    }
+  }
 }
 
-.blog .all_blog{
-  margin-top: 3%;
-  margin-left: 1%;
-  text-decoration: underline;
-  color: #4b5563;
-}
-.blog .all_blog:hover{
-  cursor: default;
-  color: white;
+.blog{
+  .all_blog{
+    margin-top: 3%;
+    margin-left: 1%;
+    text-decoration: underline;
+    color: #4b5563;
+    &:hover{
+      cursor: default;
+      color: white;
+    }
+  }
 }
