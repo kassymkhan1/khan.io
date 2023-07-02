@@ -1,23 +1,13 @@
 .body{
   float: left;
-  width: 100%;
   height: 100%;
   margin-top: 2%;
+  margin-left: calc( 10px + 800 * ((100vw - 320px)/2048));
+  margin-right: calc( 10px + 800 * ((100vw - 320px)/2048));
 }
 .body .header{
   height: 10%;
 }
 .body .info{
   margin-top: 5%;
-}
-@media (max-width: 1023px) {
-.body{
-  margin-left: 10%;
-}
-}
-@media (min-width: 1024px){
-.body{
-  margin-left: 30%;
-  margin-right: 30%;
-}
 }

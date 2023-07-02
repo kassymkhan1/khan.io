@@ -12,6 +12,7 @@ export class ToolbarComponent {
   navigates = [
     { name: "About" },
     { name: "Blog" },
+    { name: "Projects"},
     { name: "Gear" }
   ]
   constructor(
