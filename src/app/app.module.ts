@@ -9,8 +9,7 @@ import { GearComponent } from './components/gear/gear.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
 import { StartComponent } from './start/start.component';
 import { MatIconModule } from '@angular/material/icon';
-import { HttpClient, HttpClientModule } from '@angular/common/http';
-import { MarkdownModule } from 'ngx-markdown';
+import { HttpClientModule } from '@angular/common/http';
 import { BlogComponent } from './components/blog/blog.component';
 
 @NgModule({
@@ -28,9 +27,7 @@ import { BlogComponent } from './components/blog/blog.component';
     BrowserModule,
     AppRoutingModule,
     MatIconModule,
-    HttpClientModule,
-    MarkdownModule.forRoot({loader: HttpClient}),
-    MarkdownModule.forChild()
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
