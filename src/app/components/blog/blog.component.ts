@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ToolbarComponent } from 'src/app/toolbar/toolbar.component';
+import { NavigationEnd, NavigationStart, Router } from '@angular/router';
 
 @Component({
   selector: 'app-blog',
@@ -7,4 +7,23 @@ import { ToolbarComponent } from 'src/app/toolbar/toolbar.component';
   styleUrls: ['./blog.component.scss']
 })
 export class BlogComponent {
+  blog: string = "all"
+  constructor(
+    private router: Router
+  ){
+  }
+  ngOnInit(): void{
+    const regex = new RegExp('/blog/\w.*');
+    this.router.events.subscribe(() => {
+      let r = this.router.url
+      if( r.replace("/blog","") != "") {
+        this.blog = r.replace("/blog","")
+        console.log('article')
+      }else if(r.replace("/blog/tag/","") != ""){
+        console.log("tag filter")
+      }else{
+        console.log('current route: ', r)
+      }
+    })
+  }
 }
