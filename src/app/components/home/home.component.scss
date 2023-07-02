@@ -4,9 +4,9 @@
     font-size: 30px;
   }
   p{
-    margin-top: -2%;
+    margin-top: -10px;
     color: #9ca3af;
-    margin-bottom: 5%;
+    margin-bottom: 30px;
   }
 }
 
@@ -15,18 +15,18 @@
   float: left;
   width: 400px;
   columns: 2;
-  margin-top: 2%;
+  margin-top: 10px;
   font-size: 20px;
   img{
     font-size: 300px;
   }
   ul{
-    margin-left: -20%;
+    margin-left: -40px;
     font-size: 0.8em;
     color: #374151;
     li{
       &:not(:first-of-type){
-        margin-top: 3%;
+        margin-top: 10px;
       }
       a:hover{
         color: white;
@@ -36,7 +36,7 @@
   }
 }
 .description {
-  margin-top: 30%;
+  margin-top: 170px;
   display: block;
   font-size: 16px;
   color: #d4d4d4;
@@ -45,7 +45,7 @@
 
 .links {
   font-size: 15px;
-  margin-top: 5%;
+  margin-top: 30px;
   columns: 2;
   float: left;
   display: block;
@@ -54,7 +54,7 @@
     color: white;
   }
   .connects{ 
-    margin-left: -20%;
+    margin-left: -15px;
     &:hover{
       cursor: default;
       color: white;
@@ -64,8 +64,8 @@
 
 .blog{
   .all_blog{
-    margin-top: 3%;
-    margin-left: 1%;
+    margin-top: 100px;
+    margin-left: 5px;
     text-decoration: underline;
     color: #4b5563;
     &:hover{
