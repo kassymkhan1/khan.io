@@ -32,5 +32,4 @@ export class ToolbarComponent {
   DropMenu(){
       this.dropMenu = !this.dropMenu;
   }
-
 }

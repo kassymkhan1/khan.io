@@ -1,13 +1,30 @@
+$MaxWidth: 2048;
+$MinWidth: 320px;
+
+@mixin margin-left-right(){
+  margin-left: calc( 10px + 800 * ((100vw - $MinWidth)/$MaxWidth));
+  margin-right: calc( 10px + 800 * ((100vw - $MinWidth)/$MaxWidth));
+};
+
+@mixin margin-top(){
+  @media screen and (max-width:  412px) {
+    margin-top: 10%;
+    
+  }
+  @media screen and (min-width: 412px) {
+    margin-top: 3%;
+    
+  }
+}
 .body{
-  float: left;
-  height: 100%;
+  display: block;
+  margin: 0 auto;
+  @include margin-top();
+  @include margin-left-right();
+}
+.header{
   margin-top: 2%;
-  margin-left: calc( 10px + 800 * ((100vw - 320px)/2048));
-  margin-right: calc( 10px + 800 * ((100vw - 320px)/2048));
-}
-.body .header{
-  height: 10%;
-}
-.body .info{
-  margin-top: 5%;
+  text-align: center;
+  @include margin-left-right();
+  height: 7%;
 }
