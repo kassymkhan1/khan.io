@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavigationEnd, NavigationStart, Router } from '@angular/router';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-blog',
@@ -13,7 +13,7 @@ export class BlogComponent {
   ){
   }
   ngOnInit(): void{
-    const regex = new RegExp('/blog/\w.*');
+    // const regex = new RegExp('/blog/\w.*');
     this.router.events.subscribe(() => {
       let r = this.router.url
       if( r.replace("/blog","") != "") {
