@@ -1,30 +1,17 @@
-$MaxWidth: 2048;
-$MinWidth: 320px;
-
-@mixin margin-left-right(){
-  margin-left: calc( 10px + 800 * ((100vw - $MinWidth)/$MaxWidth));
-  margin-right: calc( 10px + 800 * ((100vw - $MinWidth)/$MaxWidth));
-};
-
-@mixin margin-top(){
-  @media screen and (max-width:  412px) {
-    margin-top: 10%;
-    
-  }
-  @media screen and (min-width: 412px) {
-    margin-top: 3%;
-    
-  }
-}
-.body{
-  display: block;
-  margin: 0 auto;
-  @include margin-top();
-  @include margin-left-right();
+*{
+  padding: 0;
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 .header{
-  margin-top: 2%;
-  text-align: center;
-  @include margin-left-right();
-  height: 7%;
+  width: 700px;
+  margin: auto;
+  padding: auto;
+  box-sizing: border-box;
+}
+.body{
+  width: 700px;
+  margin: auto;
+  padding: auto;
+  box-sizing: border-box
 }

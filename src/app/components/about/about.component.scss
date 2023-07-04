@@ -1,18 +1,27 @@
 @mixin DisplayFlex(){
   color: white;
+  display: block;
+  columns: 2;
+  border-color: black;
   display: none;
-  flex-flow: row;
+  color: red;
+  background-color: white;
+  border-radius: 10px;
+}
+.header_info {
+  margin-top: 4%;
+  h1{
+    color: white;
+    font-size: 40px;
+    margin-bottom: -1%;
+  }
+  p{
+    color: #9ca3af;
+    font-size: 15px;
+    margin-bottom: 30px;
+  }
 }
 
-.header_info h1{
-  color: white;
-  font-size: 30px;
-}
-.header_info p{
-  margin-top: -2%;
-  color: #9ca3af;
-  margin-bottom: 5%;
-}
 
 .about{
   @include DisplayFlex();
