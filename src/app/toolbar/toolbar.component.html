@@ -1,16 +1,14 @@
 <div id="toolbar">
  <img (click)="Router('')" src="assets/logo/icons8-darth-vader-50.png" alt="">
  <div class="navigation">
-   <ul>
-     <li 
+     <div
       *ngFor="let navigate of navigates"
       [style.color]="focus == navigate.name.toLowerCase() ? 'white' :''"
       [style.background-color]="focus == navigate.name.toLowerCase() ? 'black' :''"
       [style.border-radius]="focus == navigate.name.toLowerCase() ? '10px': ''"
       (click)="Router(navigate.name)">
        {{ navigate.name }}
-     </li>
-   </ul>
+     </div>
  </div>
 <!-- <div class="mobile_navigation"> -->
 <!-- <div class="dropdown"> -->
