@@ -46,24 +46,40 @@
 }
 
 .links{
-  font-size: 1em;
   display: flex;
+  margin-top: 10px;
   .email{
     margin-right: 20px;
-    & a:hover{
+    &:hover{
       cursor: default;
       color: white;
     }
   }
   .connects{
-    & a:hover{
+    &:hover{
       cursor: default;
       color: white;
     }
   }
-  a{
+  color: #9ca3af;
+}
+
+.blog{
+  font-size: 18px;
+  margin-top: 50px;
+  p {
     color: #9ca3af;
-    text-decoration: none;
   }
-  
+  .latest{
+    margin-top: 50px;
+  }
+  .all{
+    text-decoration: underline;
+    margin-top: 50px;
+    &:hover{
+      color: white;
+      cursor: default;
+    }
+  }
+
 }

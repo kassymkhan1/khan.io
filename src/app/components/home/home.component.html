@@ -17,20 +17,19 @@
 </div>
 
 <div class="links">
-  <div class="email">
-    <a routerLink="/home">Email me</a>
-
+  <div class="email" routerLink='/home'>
+    <mat-icon  aria-hidden="false" fontIcon="email"/>
   </div>
-  <div class="connects">
-    <a routerLink="/home">Connect with my</a>
+  <div class="connects" routerLink='/home'>
+    <mat-icon fontIcon="share" />
   </div>
 </div>
 
 
 <div *ngIf="blogs.length > 1" class="blog">
   <p>Lates Blogs</p>
-  <div *ngFor="let blog of blogs">
+  <div class="latest" *ngFor="let blog of blogs">
     {{ blog.description}}
   </div>
-  <div class="all_blog">See All</div>
+  <div class="all">See All</div>
 </div>
