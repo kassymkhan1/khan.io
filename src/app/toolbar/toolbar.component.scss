@@ -15,6 +15,7 @@ $color_1: #d1d5db;
     margin-left: 15%;
     div{
       display: block;
+      background-size: 200px;
       text-align: center;
       width: 100px;
       height: 50px;
@@ -32,5 +33,14 @@ $color_1: #d1d5db;
           margin-right: 5%;
       }
     }
+  }
+  .theme{
+    margin-top: 1%;
+    padding: auto;
+    font-size: 30px;
+    float: right;
+    margin-left: 100px;
+    color: white;
+    display: none;
   }
 }
