@@ -11,11 +11,18 @@
     margin-bottom: 30px;
   }
 }
-.search{
+
+.search {
+  display: block;
   border-radius: 20px;
   padding: 10px;
   font-size: 10px;
   height: 4%;
   width: 50%;
+  border: 2px;
+}
 
+input:focus {
+    border-color: black;
+    outline: none;
 }
