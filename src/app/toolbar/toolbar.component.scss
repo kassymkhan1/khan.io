@@ -1,46 +1,45 @@
 $color_1: #d1d5db;
-#toolbar{
-  display: flex;
-  width: 100%;
-  margin: 10px auto;
-  margin-top: 3%;
-  img{
-    display: block;
-    height: 50px;
+
+.mobile_navigation{
+    display: none;
+}
+img{
+    display: flex;
+  float: left;
+    width: auto;
+    height: auto;
     border-radius: 10px;
     background-color: $color_1;
-  }
-  .navigation{
-    display: flex;
-    margin-left: 15%;
-    div{
-      display: block;
-      background-size: 200px;
-      text-align: center;
-      width: 100px;
-      height: 50px;
-      font-size: 18px;
-      padding: 10px;
-      color: $color_1;
-    &:hover{
-        cursor: default;
-        display: block;
-        background-color: #0f172a;
-        border-radius: 10px;
-        
-      }
-    &:not(:last-of-type) {
-          margin-right: 5%;
-      }
-    }
-  }
+}
+.navigation{
+  width: 60%;
+  padding: auto;
+  display: flex;
+  margin: auto;
+  float: center;
   .theme{
-    margin-top: 1%;
-    padding: auto;
-    font-size: 30px;
-    float: right;
-    margin-left: 100px;
-    color: white;
-    // display: none;
+    margin-left: 10%;
+    padding: 10px 10px 10px 10px;
+    display: flex;
+    background-size: 200px;
+    font-size: 18px;
+    color: $color_1;
+  }
+  .navigate{
+    padding: 10px 10px 10px 10px;
+    display: flex;
+    background-size: 200px;
+    font-size: 18px;
+    color: $color_1;
+  &:hover{
+      cursor: default;
+      display: block;
+      background-color: #0f172a;
+      border-radius: 10px;
+
+    }
+  &:not(:last-of-type) {
+        margin-right: 10%; 
+    }
   }
 }
