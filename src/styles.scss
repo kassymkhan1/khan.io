@@ -4,24 +4,19 @@
   margin: 0;
   padding: 0;
 }
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 body{
   background-color: #1f2937;
 }
 
 .header_info {
-  margin-top: 4%;
+  margin-top: 25px;
   h1{
     color: white;
-    font-size: 35px;
-    margin-bottom: -1%;
+    font-size: calc(20px + 15 * ((100vw - 320px) / 1024));
   }
   p{
     color: #9ca3af;
-    font-size: 15px;
+    font-size: calc(10px + 5 * ((100vw - 320px) /1024));
     margin-bottom: 30px;
   }
 }
@@ -31,7 +26,7 @@ body{
   padding: 10px;
   font-size: 10px;
   height: 4%;
-  width: 30%;
+  width: 200px;
   border: 2px;
 }
 
