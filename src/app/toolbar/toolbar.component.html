@@ -9,23 +9,23 @@
       (click)="Router(navigate.name)">
        {{ navigate.name }}
      </div>
+    <div class="mobile_navigation">
+      <button  (click)="DropMenu()" class="dropbtn">
+        <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="menu"></mat-icon>
+      </button>
+       <ul class="dropdown-content" [style.display]="dropMenu ? 'block':'none'">
+         <li 
+          *ngFor="let navigate of navigates"
+          [style.color]="focus == navigate.name.toLowerCase() ? 'white' :''"
+          [style.background-color]="focus == navigate.name.toLowerCase() ? 'black' :''"
+          [style.border-radius]="focus == navigate.name.toLowerCase() ? '10px': ''" 
+          (click)="Router(navigate.name)">
+           {{ navigate.name }}
+         </li>
+       </ul>
+    </div>
     <div class="theme">
       <mat-icon>brightness_2</mat-icon>
     </div>
- </div>
-<div class="mobile_navigation">
-  <button  (click)="DropMenu()" class="dropbtn">
-    <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="menu"></mat-icon>
-  </button>
-   <ul class="dropdown-content" [style.display]="dropMenu ? 'block':'none'">
-     <li 
-      *ngFor="let navigate of navigates"
-      [style.color]="focus == navigate.name.toLowerCase() ? 'white' :''"
-      [style.background-color]="focus == navigate.name.toLowerCase() ? 'black' :''"
-      [style.border-radius]="focus == navigate.name.toLowerCase() ? '10px': ''" 
-      (click)="Router(navigate.name)">
-       {{ navigate.name }}
-     </li>
-   </ul>
-  </div>
+</div>
 
