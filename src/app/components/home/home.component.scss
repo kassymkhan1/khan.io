@@ -26,7 +26,6 @@
 
 .description{
   font-size: 1em;
-  width: 500px;
   padding: 16px 16px 16px 0px;
   display: block;
   color: white;
@@ -73,11 +72,9 @@
 
 @media screen and (max-width: 767.98px){
 .middle_info{
-  display: flex;
-  columns: 2;
+  display: block;
   margin-bottom: 2%;
   ul{
-    margin-left: 8%;
     font-size: 1em;
     color: #374151;
     li{
@@ -98,8 +95,7 @@
 }
 
 .description{
-  font-size: 1em;
-  width: 500px;
+  font-size: 0.8em;
   padding: 16px 16px 16px 0px;
   display: block;
   color: white;
