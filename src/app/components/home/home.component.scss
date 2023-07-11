@@ -3,6 +3,11 @@
   display: flex;
   columns: 2;
   margin-bottom: 2%;
+  .avatar{
+      padding: 5px;
+      width: 110px;
+      border-radius: 100%;
+    }
   ul{
     margin-left: 8%;
     font-size: 16px;
@@ -74,6 +79,11 @@
 .middle_info{
   display: block;
   margin-bottom: 2%;
+  .avatar{
+      padding: 10px;
+      width: 140px;
+      border-radius: 100%;
+    }
   ul{
     font-size: 10px;
     color: #374151;
