@@ -8,6 +8,7 @@ $MinWidth: 200px;
 
 .header{
   width: calc(200px + 500 *((100vw - 320px)/1024));
+  height: 60px;
   margin: auto;
   padding: auto;
   align-items: center;
