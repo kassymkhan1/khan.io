@@ -11,34 +11,26 @@ img{
     background-color: $color_1;
 }
 .navigation{
-  width: 60%;
-  padding: auto;
-  display: flex;
-  margin: auto;
+  width: 400px;
   float: center;
-  .theme{
-    margin-left: 10%;
-    padding: 10px 10px 10px 10px;
-    display: flex;
-    background-size: 200px;
-    font-size: 18px;
-    color: $color_1;
-  }
+  // margin: 0px 25%;
+  margin-left: calc(50px + 50 *( 100vw / 1024));
+  margin-right: 25%;
   .navigate{
     padding: 10px 10px 10px 10px;
-    display: flex;
-    background-size: 200px;
-    font-size: 18px;
+    text-align: center;
+    display: inline-block;
+    width: 80px;
+    font-size: 16px;
     color: $color_1;
   &:hover{
       cursor: default;
-      display: block;
       background-color: #0f172a;
       border-radius: 10px;
 
     }
   &:not(:last-of-type) {
-        margin-right: 10%;
+        margin-right: 10px;
     }
   }
 }
