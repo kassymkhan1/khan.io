@@ -7,17 +7,16 @@ $MinWidth: 200px;
 }
 
 .header{
-  width: calc(200px + 500 *((100vw - 320px)/1024));
+  width: calc(272px + 380 *((100vw - 320px)/1024));
   height: 60px;
   margin: auto;
-  padding: auto;
-  align-items: center;
-  box-sizing: border-box;
+  padding-left: 5%;
+  float: center;
   margin-top: 2%;
 }
 .body{
-  width: calc(200px + 500 * ((100vw - 302px)/1024));
+  width: calc(272px + 380 * ((100vw - 302px)/1024));
   margin: auto;
-  padding: auto;
-  box-sizing: border-box
+  float: center;
+  padding-left: 5%;
 }
