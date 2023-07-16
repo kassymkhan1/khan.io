@@ -120,24 +120,60 @@
       width: 120px;
       border-radius: 100%;
     }
-  ul{
+  .sociales{
     font-size: 10px;
+    display: block;
     color: #374151;
-    li{
-      a{
-      text-decoration: none;
-      color: #9ca3af;
+    .youtube{
+        a{
+        text-decoration: none;
+        color: #9ca3af;
+        }
+        &:not(:first-of-type){
+          margin-top: 5px;
+        }
+        a:hover{
+          color: white;
+          cursor: default;
+        }
       }
-      display: block;
-      &:not(:first-of-type){
-        margin-top: 5px;
+
+      .social{
+          a{
+          text-decoration: none;
+          color: #9ca3af;
+          }
+          &:not(:first-of-type){
+            margin-top: 5px;
+          }
+          a:hover{
+            color: white;
+            cursor: default;
+          }
+        }
+      .github{
+        display: flex;
+        a{
+          display: flex;
+          svg{
+            margin-right: 10px;
+            svg:hover{
+            color: white;
+            cursor: default;
+          }
+          }
+          text-decoration: none;
+          color: #9ca3af;
+          }
+          &:not(:first-of-type){
+            margin-top: 5px;
+          }
+          a:hover{
+            color: white;
+            cursor: default;
+          }
       }
-      a:hover{
-        color: white;
-        cursor: default;
-      }
-    }
-  }
+   }
 }
 
 .description{
