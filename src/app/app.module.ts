@@ -12,7 +12,6 @@ import { MatIconModule } from '@angular/material/icon';
 import { HttpClientModule } from '@angular/common/http';
 import { BlogComponent } from './components/blog/blog.component';
 import { ProjectsComponent } from './components/projects/projects.component';
-import { NgImageSliderModule } from 'ng-image-slider';
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,7 +29,6 @@ import { NgImageSliderModule } from 'ng-image-slider';
     AppRoutingModule,
     MatIconModule,
     HttpClientModule,
-    NgImageSliderModule
   ],
   providers: [],
   bootstrap: [AppComponent]
