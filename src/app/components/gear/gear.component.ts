@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./gear.component.scss']
 })
 export class GearComponent {
-
+  devices = [{
+    URL: "apple",
+    Name: "Macbook Pro 14",
+    Description: "Описание",
+    sponsored: false
+  }]
+  softwares = [{
+    URL: "apple",
+    Name: "Macbook Pro 14",
+    Description: "Описание"
+  }]
 }
