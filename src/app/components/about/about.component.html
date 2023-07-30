@@ -2,48 +2,8 @@
   <h1>About</h1>
    <p>Just a quick glimpse.</p>
 </div>
-<!-- <ng-image-slider *ngIf="imgCollection.length !=0" [images]="imgCollection" #nav></ng-image-slider> -->
 
-<div class="about">
-  <div class="column_1">
-    About
-  </div>
-  <div class="column_2">
-    <p>
-    Hello world, I'm Kalzhan Kassymkhan!</p><br>
-    <p>
-    I'm a DevOps engineer currently working at international company. I have a passion for programming and am always looking for ways to incorporate it into my work.</p><br>
-    <p>
-    In addition to coding, I also make YouTube videos, where I focus on tech, creative vlogs, and personal development.<br>
-    </p>
-  </div>
-</div>
-
-<div class="Connect">
-  <div class="column_1">
-     Connect
-  </div>
-  <div class="column_2">
-    <div class="description">
-      Have a question or just want to chat? Feel free to email me. Try finding me anywhere else at @kassymmkhan24
-    </div>
-    <!-- <div class="social"> -->
-    <!--   <ul> -->
-    <!--     <li *ngFor="let connect of connects">{{ connect.name}}</li> -->
-    <!--   </ul> -->
-    <!-- </div> -->
-  </div>
-</div>
-<div class="Work">
-  <div class="column_1">
-     Work
-  </div>
-  <div class="column_2">
-    <div class="work_description">
-      <p>3+ years of professional devops experience.</p><br>
-      <p>I started my career in university. Then I worked at a few small local companies.</p>
-    </div>
-    <div class="works">
-    </div>
-  </div>
+<div *ngFor="let about of abouts" class="informatiion">
+  <div class="column_1" [innerHTML]="about.title"></div>
+  <div class="column_2" [innerHTML]="about.description"></div>
 </div>
