@@ -12,24 +12,24 @@ export class ToolbarComponent {
   navigates = [
     { name: "About" },
     { name: "Blog" },
-    { name: "Projects"},
+    { name: "Projects" },
     { name: "Gear" }
   ]
   constructor(
     private router: Router
-  ) { 
-      this.router.events.subscribe((event)=>{
-        if(event instanceof NavigationStart){
-            this.focus = event.url.replace('/','')
-        }    
+  ) {
+    this.router.events.subscribe((event) => {
+      if (event instanceof NavigationStart) {
+        this.focus = event.url.replace('/', '')
       }
+    }
     )
   }
   Router(navigate: string) {
     this.focus = navigate
     this.router.navigate([navigate.toLowerCase()])
   }
-  DropMenu(){
-      this.dropMenu = !this.dropMenu;
+  DropMenu() {
+    this.dropMenu = !this.dropMenu;
   }
 }
