@@ -11,7 +11,7 @@ export class GearService {
     let devices = [{
       URL: "apple",
       Name: "Macbook Pro 14",
-      Description: "Описание",
+      Description: "Base machine for work",
       sponsored: false
     }]
     return devices
