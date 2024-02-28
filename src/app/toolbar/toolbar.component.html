@@ -1,31 +1,31 @@
- <img (click)="Router('')" src="assets/logo/icons8-darth-vader-50.png" alt="">
- <div class="navigation">
+
+<div class="container">
+ <img (click)="Router('')" src="assets/logo/icons8-darth-vader-50.png" alt="" class="logo">
+ <div class="menu">
      <div
-      class="navigate"
+      class="items"
       *ngFor="let navigate of navigates"
-      [style.color]="focus == navigate.name.toLowerCase() ? 'white' :''"
-      [style.background-color]="focus == navigate.name.toLowerCase() ? 'black' :''"
-      [style.border-radius]="focus == navigate.name.toLowerCase() ? '10px': ''"
+      [style.color]="focus == navigate.name.toLowerCase() ? '#616161' :''"
       (click)="Router(navigate.name)">
-       {{ navigate.name }}
+       <div class="item"> {{ navigate.name }}</div>
      </div>
 </div>
-<div class="dropdown" style="float:right;">
-      <button class="dropbtn">
-        <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="menu"></mat-icon>
-      </button>
-       <div class="dropdown-content">
-         <a
-          *ngFor="let navigate of navigates"
-          [style.color]="focus == navigate.name.toLowerCase() ? 'white' :''"
-          [style.background-color]="focus == navigate.name.toLowerCase() ? 'black' :''"
-          [style.border-radius]="focus == navigate.name.toLowerCase() ? '10px': ''"
-          (click)="Router(navigate.name)">
-           {{ navigate.name }}
-         </a>
-       </div>
 </div>
-
+<!-- <div class="dropdown" style="float:right;"> -->
+<!--       <button class="dropbtn"> -->
+<!--         <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="menu"></mat-icon> -->
+<!--       </button> -->
+<!--        <div class="dropdown-content"> -->
+<!--          <a -->
+<!--           *ngFor="let navigate of navigates" -->
+<!--           [style.color]="focus == navigate.name.toLowerCase() ? 'white' :''" -->
+<!--           [style.background-color]="focus == navigate.name.toLowerCase() ? 'black' :''" -->
+<!--           [style.border-radius]="focus == navigate.name.toLowerCase() ? '10px': ''" -->
+<!--           (click)="Router(navigate.name)"> -->
+<!--            {{ navigate.name }} -->
+<!--          </a> -->
+<!--        </div> -->
+<!-- </div> -->
 <!-- <div class="theme"> -->
 <!-- <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1"> -->
 <!--     <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> -->
