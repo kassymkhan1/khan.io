@@ -8,9 +8,22 @@
 .devices{
   margin-top: 10px;
   color:  #d4d4d4;
+  display: flex;
+  max-width: 1000px;
+  flex-flow: row wrap;
 }
 
 .softwares{
   color: #d4d4d4;
 }
 
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 40%;
+    margin: 10px;
+    .container{
+      padding-top:  20px;
+      padding: 4px;
+    }
+}

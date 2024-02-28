@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { MarkdownService } from 'ngx-markdown';
 
 @Component({
   selector: 'app-blog',
@@ -10,18 +11,18 @@ export class BlogComponent {
   blog: string = "all"
   constructor(
     private router: Router
-  ){
+  ) {
   }
-  ngOnInit(): void{
+  ngOnInit(): void {
     // const regex = new RegExp('/blog/\w.*');
     this.router.events.subscribe(() => {
       let r = this.router.url
-      if( r.replace("/blog","") != "") {
-        this.blog = r.replace("/blog","")
+      if (r.replace("/blog", "") != "") {
+        this.blog = r.replace("/blog", "")
         console.log('article')
-      }else if(r.replace("/blog/tag/","") != ""){
+      } else if (r.replace("/blog/tag/", "") != "") {
         console.log("tag filter")
-      }else{
+      } else {
         console.log('current route: ', r)
       }
     })

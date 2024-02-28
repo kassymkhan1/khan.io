@@ -7,15 +7,15 @@ import { GearComponent } from './components/gear/gear.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 
 const Blogs: Routes = [
-  {path: "start", component: BlogComponent}
+  { path: "start", component: BlogComponent }
 ]
 const routes: Routes = [
-  { path: "", component: HomeComponent},
-  { path: "projects", component: ProjectsComponent},
-  { path: "about", component: AboutComponent},
-  { path: "gear", component:  GearComponent},
-  { path: "blog", component: BlogComponent},
-  { path: "blog/:id", component: BlogComponent, children: Blogs}
+  { path: "", component: HomeComponent },
+  { path: "projects", component: ProjectsComponent },
+  { path: "about", component: AboutComponent },
+  { path: "gear", component: GearComponent },
+  { path: "blog", component: BlogComponent },
+  { path: "blog/:id", component: BlogComponent, children: Blogs }
 ];
 
 @NgModule({
