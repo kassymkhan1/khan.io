@@ -22,7 +22,7 @@ export class AboutComponent {
     {
       title: "Connect",
       description: `
-         Have a question or just want to chat? Feel free to email me. Try finding me anywhere else at @kassymmkhan24
+         Have a question or just want to chat? Feel free to email me. Try finding me anywhere else at @kassymkhan24
     `
     },
     {

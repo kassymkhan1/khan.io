@@ -1,69 +1,76 @@
 $color_1: #d1d5db;
 $choice: #0f172a;
 .about{
-  margin-left: 495px;
+  margin-left: 640px;
   width: 574px;
-  margin-top: -15px;
+  margin-top: 83px;
+  margin-bottom: 53px;
   color: $color_1;
   h1{
-    font-size: 50px;
+    font-size: 48px;
     height: 58px;
     text-transform: uppercase;
   }
   p{
-    margin-top: 17px;
-    font-size: 28px;
+    margin-top: 7px;
+    font-size: 30px;
     height: 36px;
   }
 }
 .info{
-  margin-left: 495px;
-  width: 600px;
+  margin-left: 640px;
   display: flex;
   flex-flow: row wrap;
-  margin-top: 70px;
+  margin-top: 83px;
   color: $color_1;
   .avatar{
-    border-radius: 100px;
+    border-radius: 88px;
+    width: 190px;
+    height: 176px;
 
   }
   .sociales{
-    font-size: 26px;
-    margin-left: 140px;
+    transition: 0.3s;
+    width: 350px;
+    margin-left: 192px;
     .youtube{
           &:hover{
           color: #616161;
           cursor: default;
-    }
-      margin-top: 10px;
+      }
+
     }
     .social{
       &:hover{
           color: #616161;
           cursor: default;
       }
-      margin-top: 10px;
     }
-    .github:hover{
+    .github{
+      margin-top: 30px;
+      margin-bottom: 50px;
+       margin-right: 30px;
+      &:hover{
           color: #616161;
           cursor: default
-    }
+    }}
   }
 }
 
 .description{
   color: $color_1;
-  font-size: 24px;
-  margin-top: 40px;
-  margin-left: 495px;
-  width: 600px;
+  font-size: 26px;
+  margin-top: 84px;
+  margin-left: 649px;
+  height: 69px;
+  width: 691px;
 }
 
 .links{
-  margin-top: 30px;
+  margin-top: 53px;
   display: flex;
   flex-flow: row wrap;
-  margin-left: 495px;
+  margin-left: 639px;
   color: $color_1;
   .connects{
     margin-left: 30px;

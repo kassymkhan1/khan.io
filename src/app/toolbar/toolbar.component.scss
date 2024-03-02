@@ -1,43 +1,40 @@
 $color_1: #d1d5db;
 $choice: #0f172a;
-.container{
+.container {
   display: flex;
-  width: 970px;
-  height: 171px;
-  margin-left: 495px;
-  margin-top: 66px;
-  margin-left: 495px;
+  width: 861px;
+  height: 100px;
+  margin-top: 81px;
+  margin-left: 529px;
   flex-flow: row wrap;
-  .logo{
-    width: 102px;
-    height: 102px;
+  .logo {
+    width: 100px;
+    height: 100px;
     border-radius: 23px;
-    margin-top: 22px;
-    margin-bottom: 47px;
-    margin-left: 15px;
+    margin-right: 46px;
     background-color: $color_1;
   }
-  .menu{
+  .menu {
     flex-flow: row wrap;
     display: flex;
-    .items{
-      margin-top: 60px;
-      margin-left: 121px;
+    margin-left: 10px;
+    margin-top: 10px;
+    .items {
       text-align: center;
-      font-size: 24px;
+      font-size: 20px;
       color: $color_1;
-      &:hover{
+      padding: 30px;
+      margin-left: 40px;
+      &:hover {
         cursor: default;
         color: #616161;
       }
-      .item{
-        padding: 10px 10px 50px;
+      &:not(:last-of-type) {
+        margin-right: 30px;
       }
     }
-
   }
 }
-
 
 // $color_1: #d1d5db;
 // .dropdown {
