@@ -1,4 +1,4 @@
 
-export class Github{
-   stargazers_count?: number
-} 
+export class Github {
+  stargazers_count?: number
+}

@@ -15,5 +15,5 @@ export class ApiService {
   youtube() { }
   blogs() { }
 
-  
+
 }

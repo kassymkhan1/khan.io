@@ -12,6 +12,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { HttpClientModule } from '@angular/common/http';
 import { BlogComponent } from './components/blog/blog.component';
 import { ProjectsComponent } from './components/projects/projects.component';
+import { MarkdownModule } from 'ngx-markdown';
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,6 +26,8 @@ import { ProjectsComponent } from './components/projects/projects.component';
 
   ],
   imports: [
+    MarkdownModule.forChild(),
+    MarkdownModule.forRoot(),
     BrowserModule,
     AppRoutingModule,
     MatIconModule,
