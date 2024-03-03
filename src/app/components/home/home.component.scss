@@ -1,11 +1,14 @@
 $color_1: #d1d5db;
 $choice: #0f172a;
 
-.about {
+@mixin Position() {
   margin-left: 640px;
   width: 574px;
-  margin-top: 83px;
-  margin-bottom: 53px;
+  margin: 83px auto;
+}
+
+.about {
+  @include Position();
   color: $color_1;
 
   h1 {
@@ -22,10 +25,9 @@ $choice: #0f172a;
 }
 
 .info {
-  margin-left: 640px;
+  @include Position();
   display: flex;
   flex-flow: row wrap;
-  margin-top: 83px;
   color: $color_1;
 
   .avatar {
@@ -37,7 +39,6 @@ $choice: #0f172a;
 
   .sociales {
     transition: 0.3s;
-    width: 350px;
     margin-left: 192px;
 
     .youtube {
@@ -70,18 +71,13 @@ $choice: #0f172a;
 
 .description {
   color: $color_1;
+  @include Position();
   font-size: 26px;
-  margin-top: 84px;
-  margin-left: 649px;
   height: 69px;
-  width: 691px;
 }
 
 .links {
-  margin-top: 53px;
-  display: flex;
-  flex-flow: row wrap;
-  margin-left: 639px;
+  @include Position();
   color: $color_1;
 
   .connects {
