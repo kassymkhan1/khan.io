@@ -1,22 +1,38 @@
 <div class="header_info">
   <h1>Gear</h1>
-   <p>My toolbox</p>
+  <p>My toolbox</p>
 </div>
 <div class="description">
   <p>
-  This is gear I actually own and recommend.
-  The affiliate links come at no extra cost, but it does however help support my content creation.
+    This is gear I actually own and recommend.
+    The affiliate links come at no extra cost, but it does however help support my content creation.
   </p>
 </div>
-
+<h1 class="headerDevice">Device</h1><br>
 <section class="devices">
-<div class="card" *ngFor=" let device of this.gear.Techs()">
-  <img  src="assets/gears/mackbook.jpg"   style="width:100%">
-  <div class="container">
-    <h1><b>{{ device.Name }}</b></h1>
-    <h6>{{ device.Description}}</h6>
+
+  <div class="card" *ngFor=" let device of this.gear.Techs()">
+    <div class="logo">
+      <img src="{{ device.Image }}">
+    </div>
+    <div class="container">
+      <h1><b>{{ device.Name }}</b></h1>
+      <!-- <h6>{{ device.Description}}</h6> -->
+    </div>
   </div>
-</div>
+</section>
+
+<h1 class="headerDevice">Softwares</h1><br>
+<section class="devices">
+  <div class="card" *ngFor=" let device of this.gear.Softs()">
+    <div class="logo">
+      <img src="{{ device.Image }}">
+    </div>
+    <div class="container">
+      <h1><b>{{ device.Name }}</b></h1>
+      <!-- <h6>{{ device.Description}}</h6> -->
+    </div>
+  </div>
 </section>
 
 <!-- <section class="softwares"> -->
