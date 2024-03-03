@@ -1,29 +1,45 @@
-.description {
-  margin-top: 1%;
-  color: #d4d4d4;
-  width: 70%;
-  font-size: 14px;
+.header_info {
+  color: #d1d5db;
+  margin-top: 3%;
+  margin-left: 550px;
+  h1 {
+    font-size: 28px;
+  }
+  p {
+    margin-top: 10px;
+    font-size: 22px;
+  }
 }
 
-.devices{
+.description {
+  margin-top: 2%;
+  color: #d4d4d4;
+  width: 850px;
+  margin-left: 550px;
+  font-size: 23px;
+}
+
+.devices {
   margin-top: 10px;
-  color:  #d4d4d4;
+  color: #d4d4d4;
   display: flex;
+  margin-left: 550px;
   max-width: 1000px;
   flex-flow: row wrap;
 }
 
-.softwares{
+.softwares {
   color: #d4d4d4;
 }
 
 .card {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    width: 40%;
-    margin: 10px;
-    .container{
-      padding-top:  20px;
-      padding: 4px;
-    }
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  font-size: 18px;
+  width: 30%;
+  margin: 10px;
+  .container {
+    padding-top: 20px;
+    padding: 4px;
+  }
 }
