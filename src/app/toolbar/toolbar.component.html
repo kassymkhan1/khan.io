@@ -1,15 +1,9 @@
-
 <div class="container">
- <img (click)="Router('')" src="assets/logo/icons8-darth-vader-50.png" alt="" class="logo">
- <div class="menu">
-     <div
-      class="items"
-      *ngFor="let navigate of navigates"
-      [style.color]="focus == navigate.name.toLowerCase() ? '#616161' :''"
-      (click)="Router(navigate.name)">
-       <div class="item"> {{ navigate.name }}</div>
-     </div>
-</div>
+  <img (click)="Router('')" src="assets/logo/icons8-darth-vader-50.png" alt="" class="logo">
+  <span class="items" *ngFor="let navigate of navigates"
+    [style.color]="focus == navigate.name.toLowerCase() ? '#616161' :''" (click)="Router(navigate.name)">
+    <div class="item"> {{ navigate.name }}</div>
+  </span>
 </div>
 
 
