@@ -1,19 +1,19 @@
 @mixin DisplayFlex() {
   color: #d1d5db;
   columns: 2;
-  width: 1200px;
-  margin-top: 4%;
+  width: 850px;
+  margin: 100px auto;
   display: flex;
-  margin-left: 400px;
+
   .column_1 {
-    margin-left: 130px;
     font-size: 26px;
-    width: 50%;
+    width: 30%;
     padding: 10px;
   }
+
   .column_2 {
     font-size: 20px;
-    width: 100%;
+    width: 75%;
     padding: 10px;
   }
 }
@@ -24,11 +24,13 @@
 
 .header_info {
   color: #d1d5db;
-  margin-top: 5%;
-  margin-left: 530px;
+  margin: 83px auto;
+  width: 850px;
+
   h1 {
     font-size: 28px;
   }
+
   p {
     margin-top: 10px;
     font-size: 20px;
