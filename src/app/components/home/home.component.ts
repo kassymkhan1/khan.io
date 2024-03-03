@@ -17,22 +17,22 @@ export class HomeComponent {
   github_url: string = "https://github.com/kassymkhan1"
   youtube_url: string = "https://www.youtube.com/channel/UCwQgVeAPJORKHc3uK3_JjZw"
   sociales = [
-    { name: "Total Blog Views", path: "/blog" },
+    { name: "Blogs", path: "/blog" },
   ]
   ngOnInit(): void {
   }
   constructor(
     private api: ApiService
   ) {
-    this.github = this.api.github().subscribe((response)=>{
+    this.github = this.api.github().subscribe((response) => {
       response.forEach((element) => {
-        if (element.stargazers_count){
-        this.GithubStars += element.stargazers_count
+        if (element.stargazers_count) {
+          this.GithubStars += element.stargazers_count
         }
       });
     })
   }
-  onDestroy(): void{
+  onDestroy(): void {
     this.github.destroy()
   }
 }
