@@ -1,6 +1,6 @@
 # KhanIo
 
-My [website](https://khan-io.web.app)
+My [website](https://khan-io.vercel.app)
 In progress! 
 ## Development server
 
