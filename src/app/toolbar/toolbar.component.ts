@@ -20,7 +20,7 @@ export class ToolbarComponent {
   ) {
     this.router.events.subscribe((event) => {
       if (event instanceof NavigationStart) {
-        this.focus = event.url.replace('/', '')
+        this.focus = event.url.split("/")[1]
       }
     }
     )
