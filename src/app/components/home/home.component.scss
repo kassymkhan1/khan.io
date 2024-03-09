@@ -1,5 +1,6 @@
 $color_1: #d1d5db;
 $choice: #0f172a;
+@tailwind base;
 
 @mixin Position() {
   margin-left: 640px;
@@ -12,7 +13,7 @@ $choice: #0f172a;
   color: $color_1;
 
   h1 {
-    font-size: 48px;
+    font-size: 46px;
     height: 58px;
     text-transform: uppercase;
   }

@@ -1,11 +1,12 @@
-*{
+* {
   margin: 0;
   padding: 0;
+  font-family: 'Times New Roman', Times, serif;
 }
-@tailwind base;
+
 @tailwind components;
 @tailwind utilities;
 
-body{
+body {
   background-color: #1f2937;
 }
