@@ -1,18 +1,17 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { MarkdownService } from 'ngx-markdown';
 
 @Component({
   selector: 'app-blog',
   templateUrl: './blog.component.html',
-  styleUrls: ['./blog.component.scss']
+  styleUrls: ['./blog.component.scss'],
 })
 export class BlogComponent {
-  blog: string = "all"
+  blog: string = ""
+  text = "assets/blog/start.md"
   constructor(
-    private router: Router
-  ) {
-  }
+    private router: Router,
+  ) { }
   ngOnInit(): void {
     // const regex = new RegExp('/blog/\w.*');
     this.router.events.subscribe(() => {
