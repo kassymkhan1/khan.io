@@ -2,7 +2,7 @@
   color: #d1d5db;
   columns: 2;
   width: 850px;
-  margin: 100px auto;
+  margin: -1vh auto 83px auto;
   display: flex;
 
   .column_1 {
@@ -36,6 +36,7 @@
 
   p {
     margin-top: 10px;
+    font-weight: inherit;
     font-size: 20px;
   }
 }
