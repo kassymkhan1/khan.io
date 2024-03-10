@@ -2,18 +2,20 @@
   color: #d1d5db;
   columns: 2;
   width: 850px;
-  margin: 100px auto;
+  margin: -1vh auto 83px auto;
   display: flex;
 
   .column_1 {
-    font-size: 26px;
+    font-size: 24px;
     width: 30%;
+    font-weight: inherit;
     padding: 10px;
   }
 
   .column_2 {
     font-size: 20px;
     width: 75%;
+    font-weight: inherit;
     padding: 10px;
   }
 }
@@ -29,10 +31,12 @@
 
   h1 {
     font-size: 28px;
+    font-weight: inherit;
   }
 
   p {
     margin-top: 10px;
+    font-weight: inherit;
     font-size: 20px;
   }
 }

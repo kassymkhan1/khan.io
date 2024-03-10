@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
@@ -9,10 +8,11 @@ import { GearComponent } from './components/gear/gear.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
 import { StartComponent } from './components/start/start.component';
 import { MatIconModule } from '@angular/material/icon';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { BlogComponent } from './components/blog/blog.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { MarkdownModule } from 'ngx-markdown';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,8 +26,10 @@ import { MarkdownModule } from 'ngx-markdown';
 
   ],
   imports: [
+    MarkdownModule.forRoot({
+      loader: HttpClient
+    }),
     MarkdownModule.forChild(),
-    MarkdownModule.forRoot(),
     BrowserModule,
     AppRoutingModule,
     MatIconModule,
