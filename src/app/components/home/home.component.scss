@@ -1,26 +1,26 @@
 $color_1: #d1d5db;
 $choice: #0f172a;
-@tailwind base;
 
 @mixin Position() {
-  margin-left: 640px;
+  margin: 0px auto 0px auto;
   width: 574px;
-  margin: 83px auto;
 }
 
 .about {
   @include Position();
+  margin-top: 10px;
   color: $color_1;
 
   h1 {
-    font-size: 46px;
+    font-size: 40px;
     height: 58px;
+    font-weight: inherit;
     text-transform: uppercase;
   }
 
   p {
-    margin-top: 7px;
-    font-size: 30px;
+    margin-top: 2px;
+    font-size: 22px;
     height: 36px;
   }
 }
@@ -29,6 +29,7 @@ $choice: #0f172a;
   @include Position();
   display: flex;
   flex-flow: row wrap;
+  margin-top: 80px;
   color: $color_1;
 
   .avatar {
@@ -40,7 +41,7 @@ $choice: #0f172a;
 
   .sociales {
     transition: 0.3s;
-    margin-left: 192px;
+    margin-left: 160px;
 
     .youtube {
       &:hover {
@@ -73,12 +74,14 @@ $choice: #0f172a;
 .description {
   color: $color_1;
   @include Position();
-  font-size: 26px;
+  margin-top: 60px;
+  font-size: 24px;
   height: 69px;
 }
 
 .links {
   @include Position();
+  margin-top: 10px;
   color: $color_1;
 
   .connects {

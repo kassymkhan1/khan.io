@@ -1,12 +1,12 @@
-@tailwind base;
-
 .header_info {
   color: #d1d5db;
   width: 800px;
-  margin: 10px auto;
+  margin: auto;
+
 
   h1 {
     font-size: 28px;
+    font-weight: inherit;
   }
 
   p {
@@ -15,10 +15,10 @@
   }
 
   .search {
-    width: 300px;
-    margin-top: 5%;
-    padding: 20px;
-    height: 30px;
+    width: 260px;
+    margin-top: 2vh;
+    padding: 18px;
+    height: 0.2vh;
     color: black;
     border-radius: 23px;
   }
