@@ -75,3 +75,13 @@
     // padding-top: 20px;
   }
 }
+
+.url{
+  &:link{
+    text-decoration: none;
+  }
+  color: #d1d5db;
+  &:hover{
+    text-decoration: underline;
+  }
+}
