@@ -31,7 +31,7 @@ export class GearService {
       {
         URL: 'https://astronvim.com/',
         Name: 'Nvim',
-        Image: "https://himynameisoleg.com/static/fc01ad89d221a3277846a09c20600fc9/fde66/astronvim.png",
+        Image: "https://astronvim.com/_astro/astrodark.CdHFd1a7_eiWC4.webp",
         Description: 'My best IDE',
       },
       {

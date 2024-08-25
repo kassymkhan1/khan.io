@@ -22,7 +22,7 @@
 <section class="devices">
   <div class="card" *ngFor=" let device of this.gear.Softs()">
     <img class="logo" src="{{ device.Image }}" atl="">
-    <h1 class="name"><b>{{ device.Name }}</b></h1>
+    <h1 class="name"><b><a class="url"  href="{{ device.URL }}">{{ device.Name }}</a></b></h1>
     <!-- <h6>{{ device.Description}}</h6> -->
   </div>
 </section>
