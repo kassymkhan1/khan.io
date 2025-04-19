@@ -14,12 +14,12 @@ export default function AboutPage() {
         <section className="grid md:grid-cols-3 gap-6">
           <h2 className="text-xl font-semibold text-white">Background</h2>
           <div className="md:col-span-2 space-y-4">
-            <p>Hello world, I'm Kalzhan Kassymkhan — a DevOps engineer, developer, and tech enthusiast based in Kazakhstan.</p>
+            <p>Hello world, I’m Kalzhan Kassymkhan — a DevOps engineer, developer, and tech enthusiast based in Kazakhstan.</p>
             <p>
-              I’ve always been drawn to solving complex problems and building systems that are efficient, scalable, and reliable. Over the past few years, I've worked across multiple layers of the tech stack, but my true passion lies in automating infrastructure and making developers' lives easier.
+              I’ve always been drawn to solving complex problems and building systems that are efficient, scalable, and reliable. Over the past few years, I’ve worked across multiple layers of the tech stack, but my true passion lies in automating infrastructure and making developers’ lives easier.
             </p>
             <p>
-              I specialize in working with tools like Docker, Kubernetes, and Terraform, and I'm a strong advocate for CI/CD, infrastructure as code, and cloud-native technologies. My daily work often involves platforms like AWS, Fly.io, GitHub Actions, and Envoy Proxy.
+              I specialize in working with tools like Docker, Kubernetes, and Terraform, and I’m a strong advocate for CI/CD, infrastructure as code, and cloud-native technologies. My daily work often involves platforms like AWS, Fly.io, GitHub Actions, and Envoy Proxy.
             </p>
             <p>
               In addition to my technical work, I also enjoy sharing what I learn. I create YouTube videos where I talk about dev tools, engineering workflows, and productivity tips — all with a focus on simplicity and clarity.
@@ -57,4 +57,5 @@ export default function AboutPage() {
     </main>
   );
 }
+
 
