@@ -1,5 +1,6 @@
-
 'use client';
+
+import Image from 'next/image';
 
 const devices = [
   {
@@ -43,6 +44,7 @@ export default function GearPage() {
   return (
     <main className="bg-[#1e293b] text-gray-200 min-h-screen px-6 py-20">
       <div className="max-w-5xl mx-auto space-y-12">
+        {/* Title & intro */}
         <section className="space-y-2">
           <h1 className="text-3xl font-bold">Gear</h1>
           <p className="text-gray-400">My toolbox</p>
@@ -61,15 +63,19 @@ export default function GearPage() {
                 href={item.URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex flex-col items-center"
+                className="flex flex-col items-center text-center"
               >
-                <img
-                  src={item.Image}
-                  alt={item.Name}
-                  className="w-full h-48 object-cover rounded-md shadow-md"
-                />
+                <div className="relative w-full h-48">
+                  <Image
+                    src={item.Image}
+                    alt={item.Name}
+                    fill
+                    className="object-cover rounded-md shadow-md"
+                    unoptimized
+                  />
+                </div>
                 <p className="mt-2 font-medium">{item.Name}</p>
-                <p className="text-sm text-gray-400 text-center">{item.Description}</p>
+                <p className="text-sm text-gray-400">{item.Description}</p>
               </a>
             ))}
           </div>
@@ -85,15 +91,19 @@ export default function GearPage() {
                 href={item.URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex flex-col items-center"
+                className="flex flex-col items-center text-center"
               >
-                <img
-                  src={item.Image}
-                  alt={item.Name}
-                  className="w-full h-48 object-contain rounded-md shadow-md bg-white p-2"
-                />
+                <div className="relative w-full h-48 bg-white rounded-md p-2">
+                  <Image
+                    src={item.Image}
+                    alt={item.Name}
+                    fill
+                    className="object-contain rounded-md"
+                    unoptimized
+                  />
+                </div>
                 <p className="mt-2 font-medium">{item.Name}</p>
-                <p className="text-sm text-gray-400 text-center">{item.Description}</p>
+                <p className="text-sm text-gray-400">{item.Description}</p>
               </a>
             ))}
           </div>
