@@ -21,9 +21,9 @@ const devices = [
 
 const softwares = [
   {
-    URL: 'https://astronvim.com/',
-    Name: 'Nvim',
-    Image: 'https://astronvim.com/_astro/astrodark.CdHFd1a7_eiWC4.webp',
+    URL: 'https://lazyvim.org/',
+    Name: 'LazyVim',
+    Image: 'https://user-images.githubusercontent.com/292349/213447056-92290767-ea16-430c-8727-ce994c93e9cc.png',
     Description: 'My best IDE',
   },
   {
