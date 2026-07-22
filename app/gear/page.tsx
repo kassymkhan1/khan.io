@@ -4,37 +4,62 @@ import Image from 'next/image';
 
 const devices = [
   {
-    url: 'https://apple.com',
-    name: 'Macbook Pro 14',
+    url: 'https://apple.com/macbook-pro/',
+    name: 'MacBook Pro 14"',
     image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSobj-8Pw04nd4JSrO4qT9_1ui2PWVLf1JnIQ&usqp=CAU',
-    description: 'Base machine for work',
+    description: 'Primary workstation for infrastructure engineering, local Kubernetes dev, and everything else',
   },
   {
-    url: 'https://apple.com',
-    name: 'iPad Pro 11',
+    url: 'https://apple.com/ipad-pro/',
+    name: 'iPad Pro 11"',
     image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxRLlzogCRG_bdmmtPDkfMemdXtU95gwccHw&usqp=CAU',
-    description: 'My watch device',
+    description: 'Companion device for reading docs, note-taking, and consuming content on the go',
   },
+  {
+    url: 'https://apple.com/iphone/',
+    name: 'iPhone 15 Pro',
+    image: 'https://www.apple.com/newsroom/images/2023/09/apple-unveils-iphone-15-pro-and-iphone-15-pro-max/article/Apple-iPhone-15-Pro-lineup-hero-230912_Full-Bleed-Image.jpg.large.jpg',
+    description: 'Always-on mobile device for monitoring alerts, Grafana dashboards, and Slack on the go',
+  }
 ];
 
 const softwares = [
+
   {
     url: 'https://lazyvim.org/',
     name: 'LazyVim',
     image: 'https://user-images.githubusercontent.com/292349/213447056-92290767-ea16-430c-8727-ce994c93e9cc.png',
-    description: 'My editor of choice',
+    description: 'Modal editor for config files, Go code, and Bash scripts — fast and keyboard-driven',
   },
   {
     url: 'https://linear.app',
     name: 'Linear',
-    image: 'https://linear.app/static/og/home.jpg',
-    description: 'Project management',
+    image: 'https://images.seeklogo.com/logo-png/48/1/linear-logo-png_seeklogo-483920.png',
+    description: 'Issue tracking for infrastructure tasks, incident management, and sprint planning',
   },
   {
     url: 'https://slack.com',
     name: 'Slack',
-    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwZ0xsTd-O1JdW3HAvp6m8jHcSnp1QQ_Nw7Q&usqp=CAU',
-    description: 'Team communication',
+    image: 'https://logos-world.net/wp-content/uploads/2020/10/Slack-Logo.png',
+    description: 'Primary async communication across distributed engineering teams',
+  },
+  {
+    url: 'https://obsidian.md/',
+    name: 'Obsidian',
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRahXinYc2t-idm77fyrnWpdW-QpFtMomYqCnEMRx6HnA&s',
+    description: 'Personal knowledge base for runbooks, architecture notes, and linked thinking',
+  },
+  {
+    url: 'https://code.visualstudio.com/',
+    name: 'VS Code',
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsJd3F4VZHrGgTPVcvtT9jlIZMAMYGTpUlsSZC2tmyRxXHiFf0WGX1OSqx&s=10',
+    description: 'Go-to editor for larger projects, Helm charts, and anything that needs extensions',
+  },
+  {
+    url: 'https://unity.com/',
+    name: 'Unity',
+    image: 'https://1000logos.net/wp-content/uploads/2021/10/Unity-logo.png',
+    description: 'Game engine for side projects and experimenting with real-time 3D',
   },
 ];
 
@@ -75,7 +100,7 @@ export default function GearPage() {
         <section className="space-y-2">
           <h1 className="text-3xl font-bold text-white">Gear</h1>
           <p className="text-gray-400">
-            The hardware and software I use every day.
+            The hardware and software I rely on every day as a DevOps engineer.
           </p>
         </section>
 
