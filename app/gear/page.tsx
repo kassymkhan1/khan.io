@@ -4,112 +4,95 @@ import Image from 'next/image';
 
 const devices = [
   {
-    URL: 'https://apple.com',
-    Name: 'Macbook Pro 14',
-    Image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSobj-8Pw04nd4JSrO4qT9_1ui2PWVLf1JnIQ&usqp=CAU',
-    Description: 'Base machine for work',
-    sponsored: false,
+    url: 'https://apple.com',
+    name: 'Macbook Pro 14',
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSobj-8Pw04nd4JSrO4qT9_1ui2PWVLf1JnIQ&usqp=CAU',
+    description: 'Base machine for work',
   },
   {
-    URL: 'https://apple.com',
-    Name: 'iPad Pro 11',
-    Image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxRLlzogCRG_bdmmtPDkfMemdXtU95gwccHw&usqp=CAU',
-    Description: 'My watch device',
-    sponsored: false,
+    url: 'https://apple.com',
+    name: 'iPad Pro 11',
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxRLlzogCRG_bdmmtPDkfMemdXtU95gwccHw&usqp=CAU',
+    description: 'My watch device',
   },
 ];
 
 const softwares = [
   {
-    URL: 'https://lazyvim.org/',
-    Name: 'LazyVim',
-    Image: 'https://user-images.githubusercontent.com/292349/213447056-92290767-ea16-430c-8727-ce994c93e9cc.png',
-    Description: 'My best IDE',
+    url: 'https://lazyvim.org/',
+    name: 'LazyVim',
+    image: 'https://user-images.githubusercontent.com/292349/213447056-92290767-ea16-430c-8727-ce994c93e9cc.png',
+    description: 'My editor of choice',
   },
   {
-    URL: 'https://linear.app',
-    Name: 'Linear',
-    Image: 'https://linear.app/static/og/home.jpg',
-    Description: 'My productive app',
+    url: 'https://linear.app',
+    name: 'Linear',
+    image: 'https://linear.app/static/og/home.jpg',
+    description: 'Project management',
   },
   {
-    URL: 'https://slack.com',
-    Name: 'Slack',
-    Image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwZ0xsTd-O1JdW3HAvp6m8jHcSnp1QQ_Nw7Q&usqp=CAU',
-    Description: 'Communication Application',
+    url: 'https://slack.com',
+    name: 'Slack',
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwZ0xsTd-O1JdW3HAvp6m8jHcSnp1QQ_Nw7Q&usqp=CAU',
+    description: 'Team communication',
   },
 ];
 
+function GearGrid({ items }: { items: typeof devices }) {
+  return (
+    <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+      {items.map((item) => (
+        <a
+          key={item.name}
+          href={item.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="group flex flex-col gap-3 border border-white/10 rounded-xl p-4 hover:border-white/20 hover:bg-white/5 transition-all"
+        >
+          <div className="relative w-full h-40 bg-white/5 rounded-lg overflow-hidden">
+            <Image
+              src={item.image}
+              alt={item.name}
+              fill
+              className="object-contain p-2"
+              unoptimized
+            />
+          </div>
+          <div>
+            <p className="text-white font-medium text-sm">{item.name}</p>
+            <p className="text-gray-500 text-xs mt-0.5">{item.description}</p>
+          </div>
+        </a>
+      ))}
+    </div>
+  );
+}
+
 export default function GearPage() {
   return (
-    <main className="bg-[#1e293b] text-gray-200 min-h-screen px-6 py-20">
-      <div className="max-w-5xl mx-auto space-y-12">
-        {/* Title & intro */}
+    <main className="bg-[#0d1117] text-gray-200 min-h-screen px-6 py-20">
+      <div className="max-w-4xl mx-auto space-y-14">
         <section className="space-y-2">
-          <h1 className="text-3xl font-bold">Gear</h1>
-          <p className="text-gray-400">My toolbox</p>
-          <p className="text-gray-400 max-w-2xl">
-            The gear I use and recommend. Some links are affiliate links that help support my content — at no extra cost to you.
+          <h1 className="text-3xl font-bold text-white">Gear</h1>
+          <p className="text-gray-400">
+            The hardware and software I use every day.
           </p>
         </section>
 
-        {/* Devices */}
         <section>
-          <h2 className="text-2xl font-semibold mb-4">Devices</h2>
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
-            {devices.map((item) => (
-              <a
-                key={item.Name}
-                href={item.URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex flex-col items-center text-center"
-              >
-                <div className="relative w-full h-48">
-                  <Image
-                    src={item.Image}
-                    alt={item.Name}
-                    fill
-                    className="object-cover rounded-md shadow-md"
-                    unoptimized
-                  />
-                </div>
-                <p className="mt-2 font-medium">{item.Name}</p>
-                <p className="text-sm text-gray-400">{item.Description}</p>
-              </a>
-            ))}
-          </div>
+          <h2 className="text-sm text-gray-500 uppercase tracking-widest font-mono mb-5">
+            Devices
+          </h2>
+          <GearGrid items={devices} />
         </section>
 
-        {/* Softwares */}
         <section>
-          <h2 className="text-2xl font-semibold mb-4">Softwares</h2>
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
-            {softwares.map((item) => (
-              <a
-                key={item.Name}
-                href={item.URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex flex-col items-center text-center"
-              >
-                <div className="relative w-full h-48 bg-white rounded-md p-2">
-                  <Image
-                    src={item.Image}
-                    alt={item.Name}
-                    fill
-                    className="object-contain rounded-md"
-                    unoptimized
-                  />
-                </div>
-                <p className="mt-2 font-medium">{item.Name}</p>
-                <p className="text-sm text-gray-400">{item.Description}</p>
-              </a>
-            ))}
-          </div>
+          <h2 className="text-sm text-gray-500 uppercase tracking-widest font-mono mb-5">
+            Software
+          </h2>
+          <GearGrid items={softwares} />
         </section>
       </div>
     </main>
   );
 }
-
