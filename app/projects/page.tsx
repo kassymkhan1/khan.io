@@ -18,6 +18,20 @@ const projects = [
     tags: ['Go', 'Envoy', 'Fly.io', 'DevOps'],
     status: 'In Progress',
   },
+  {
+    title: 'xds',
+    description: 'Production-ready control plane for Envoy Proxy implementing the xDS discovery protocol — hot-reloads CDS/EDS/LDS/RDS/SDS config over gRPC and pushes it to connected proxies without restarts or dropped connections.',
+    link: '/projects/xds',
+    tags: ['Go', 'Envoy', 'gRPC', 'DevOps'],
+    status: 'In Progress',
+  },
+  {
+    title: 'helm-charts',
+    description: 'A public repository of reusable Helm charts for deploying services to Kubernetes, published to Artifact Hub and served via GitHub Pages.',
+    link: '/projects/helm-charts',
+    tags: ['Helm', 'Kubernetes', 'DevOps'],
+    status: 'In Progress',
+  },
 ];
 
 const tagColors: Record<string, string> = {
@@ -28,6 +42,9 @@ const tagColors: Record<string, string> = {
   DevOps: 'bg-green-500/20 text-green-300',
   Canvas: 'bg-orange-500/20 text-orange-300',
   Game: 'bg-pink-500/20 text-pink-300',
+  gRPC: 'bg-indigo-500/20 text-indigo-300',
+  Helm: 'bg-sky-500/20 text-sky-300',
+  Kubernetes: 'bg-blue-600/20 text-blue-400',
 };
 
 export default function ProjectsPage() {
